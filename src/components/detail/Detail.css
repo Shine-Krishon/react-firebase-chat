@@ -3,13 +3,16 @@
 
   .user {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 20px;
+    justify-content: center;
+    gap: 10px;
     padding: 20px;
+    border-bottom: 1px solid #dddddd35;
 
     img {
-      width: 40px;
-      height: 40px;
+      width: 70px;
+      height: 70px;
       border-radius: 50%;
     }
 
@@ -17,10 +20,29 @@
       display: flex;
       flex-direction: column;
       gap: 5px;
+      text-align: center;
 
       p {
         font-size: 14px;
         color: #dddddd;
+      }
+    }
+  }
+
+  .settings {
+    .item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+
+      img {
+        width: 20px;
+        height: 20px;
+        background-color: rgba(17, 25, 40, 0.5);
+        padding: 2px;
+        border-radius: 3px;
+        cursor: pointer;
       }
     }
   }
